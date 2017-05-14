@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ViewCriancasActivity">
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_nome"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_idade"
+        android:textColor="#333333"
+        android:layout_weight="1"
+        android:paddingRight="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/txtNome"
+        android:layout_alignRight="@+id/txtNome"
+        android:layout_alignEnd="@+id/txtNome" />
+
+</RelativeLayout>

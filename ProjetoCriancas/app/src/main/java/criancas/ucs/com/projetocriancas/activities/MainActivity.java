@@ -1,16 +1,9 @@
 package criancas.ucs.com.projetocriancas.activities;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.database.Cursor;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.CursorAdapter;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
 
 import criancas.ucs.com.projetocriancas.R;
 
@@ -19,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_criancas_fragment);
 
 
         new Handler().postDelayed(new Runnable() {

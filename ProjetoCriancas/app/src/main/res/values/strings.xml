@@ -2,4 +2,19 @@
     <string name="app_name">ProjetoCriancas</string>
     <string name="splash">Projeto Crianças</string>
     <string name="splash_2">Tópicos de Programação Baseada em Plataformas</string>
+    <string name="lbl_nome">Nome</string>
+    <string name="lbl_sexo">Sexo</string>
+    <string name="lbl_dta_nascimento">Data de Nascimento</string>
+    <string name="lbl_dta_coleta">Data da Informação</string>
+    <string name="lbl_peso">Peso</string>
+    <string name="lbl_altura">Altura</string>
+    <string name="lbl_idade">Idade</string>
+    <string name="lbl_salvar">Salvar</string>
+    <string name="lbl_incluir">Incluir</string>
+    <string name="title_activity_listagem">ListagemActivity</string>
+    <string name="title_activity_view_criancas">ViewCriancasActivity</string>
+    <string name="title_activity_grafico">GraficoActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

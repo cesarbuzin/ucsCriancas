@@ -15,6 +15,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".fragment.ListagemActivity"
+            android:label="@string/title_activity_listagem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment.ViewCriancasActivity"
+            android:label="@string/title_activity_view_criancas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".fragment.EditDadosActivity" />
+        <activity android:name=".fragment.IncludeInfoActivity" />
+        <activity
+            android:name=".fragment.GraficoActivity"
+            android:label="@string/title_activity_grafico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.CriancasFragmentActivity"></activity>
     </application>
 
 </manifest>
