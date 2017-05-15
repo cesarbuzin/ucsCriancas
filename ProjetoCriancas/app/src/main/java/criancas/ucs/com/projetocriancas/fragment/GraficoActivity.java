@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import criancas.ucs.com.projetocriancas.R;
 
-public class GraficoActivity extends Fragment {
+public class GraficoActivity extends android.app.Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

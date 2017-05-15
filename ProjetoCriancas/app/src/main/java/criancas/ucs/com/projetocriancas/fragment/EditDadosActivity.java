@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import criancas.ucs.com.projetocriancas.R;
 
-public class EditDadosActivity extends Fragment {
+public class EditDadosActivity extends android.app.Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

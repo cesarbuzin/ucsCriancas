@@ -29,7 +29,8 @@
             android:name=".fragment.GraficoActivity"
             android:label="@string/title_activity_grafico"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.CriancasFragmentActivity"></activity>
+        <activity android:name=".activities.CriancasFragmentActivity" />
+        <activity android:name=".fragment.EmptyActivity"></activity>
     </application>
 
 </manifest>

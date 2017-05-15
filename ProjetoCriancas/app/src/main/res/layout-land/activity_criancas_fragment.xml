@@ -12,43 +12,19 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_toRightOf="@+id/GraficoCriancas"
-        android:layout_toEndOf="@+id/GraficoCriancas" />
+        android:layout_toEndOf="@+id/GraficoCriancas"
+        tools:layout="@layout/activity_listagem" />
 
-    <RelativeLayout
-        android:layout_width="427dp"
-        android:layout_height="match_parent">
+    <fragment
+        android:layout_weight="1"
+        android:id="@+id/EmptyActivity"
+        android:name="criancas.ucs.com.projetocriancas.fragment.EmptyActivity"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout="@layout/activity_empty" />
 
-        <fragment
-            android:layout_weight="2"
-            android:id="@+id/GraficoCriancas"
-            android:name="criancas.ucs.com.projetocriancas.fragment.GraficoActivity"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <fragment
-            android:layout_weight="2"
-            android:id="@+id/InformacoesCriancas"
-            android:name="criancas.ucs.com.projetocriancas.fragment.IncludeInfoActivity"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <fragment
-            android:layout_weight="2"
-            android:id="@+id/DadosCrianca"
-            android:name="criancas.ucs.com.projetocriancas.fragment.EditDadosActivity"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
 </LinearLayout>

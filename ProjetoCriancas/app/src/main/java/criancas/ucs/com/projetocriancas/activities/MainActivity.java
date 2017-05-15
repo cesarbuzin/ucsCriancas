@@ -1,11 +1,13 @@
 package criancas.ucs.com.projetocriancas.activities;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
 import criancas.ucs.com.projetocriancas.R;
+import criancas.ucs.com.projetocriancas.listener.OnItemClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("Falha ao aguardar!", e.getMessage());
                 }
                 finish();
-                //Intent viewLivros = new Intent(getApplicationContext(), ListaCadastrosActivity.class);
-                //startActivity(viewLivros);
+                Intent viewCriancas = new Intent(getApplicationContext(), CriancasFragmentActivity.class);
+                startActivity(viewCriancas);
             }
         }, 3000);
 

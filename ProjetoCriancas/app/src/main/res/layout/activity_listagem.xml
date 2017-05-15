@@ -7,10 +7,11 @@
     android:fitsSystemWindows="true"
     tools:context=".fragment.ListagemActivity">
 
-    <include layout="@layout/content_listagem" />
+    <include layout="@layout/content_listagem"
+        android:id="@+id/list" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/addCrianca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"

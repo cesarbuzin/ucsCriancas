@@ -2,53 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_criancas_fragment"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <fragment
-        android:layout_weight="1"
         android:id="@+id/ListagemCriancasActivity"
         android:name="criancas.ucs.com.projetocriancas.fragment.ListagemActivity"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="301dp"
         android:layout_toRightOf="@+id/GraficoCriancas"
-        android:layout_toEndOf="@+id/GraficoCriancas" />
+        android:layout_toEndOf="@+id/GraficoCriancas"
+        tools:layout="@layout/activity_listagem" />
 
-    <RelativeLayout
-        android:layout_width="427dp"
-        android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/EmptyActivity"
+        android:name="criancas.ucs.com.projetocriancas.fragment.EmptyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-        <fragment
-            android:layout_weight="2"
-            android:id="@+id/GraficoCriancas"
-            android:name="criancas.ucs.com.projetocriancas.fragment.GraficoActivity"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <fragment
-            android:layout_weight="2"
-            android:id="@+id/InformacoesCriancas"
-            android:name="criancas.ucs.com.projetocriancas.fragment.IncludeInfoActivity"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <fragment
-            android:layout_weight="2"
-            android:id="@+id/DadosCrianca"
-            android:name="criancas.ucs.com.projetocriancas.fragment.EditDadosActivity"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
 </LinearLayout>
