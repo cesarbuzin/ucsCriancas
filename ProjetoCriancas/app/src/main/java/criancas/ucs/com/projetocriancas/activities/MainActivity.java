@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.util.Log;
 
 import criancas.ucs.com.projetocriancas.R;
-import criancas.ucs.com.projetocriancas.listener.OnItemClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_criancas_fragment);
+        setContentView(R.layout.activity_main);
 
 
         new Handler().postDelayed(new Runnable() {

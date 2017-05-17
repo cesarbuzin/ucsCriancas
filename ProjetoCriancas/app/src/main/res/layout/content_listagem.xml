@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".fragment.ListagemActivity"
-    android:descendantFocusability="blocksDescendants"
     tools:showIn="@layout/activity_listagem"
     android:clipChildren="true">
 
