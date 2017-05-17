@@ -27,7 +27,7 @@ public class DBAdapter {
             " nome text not null," +
             " sexo text not null," +
             " dtaNascimento text not null," +
-            " dtaLeitura text not null," +
+            " mes integer not null," +
             " altura integer not null," +
             " peso real not null);" ;
     private final Context contexto;

@@ -7,11 +7,16 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".fragment.ListagemActivity"
-    tools:showIn="@layout/activity_listagem">
+    android:descendantFocusability="blocksDescendants"
+    tools:showIn="@layout/activity_listagem"
+    android:clipChildren="true">
 
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/list" />
+
+        android:id="@+id/listagemCriancas"
+        android:clickable="true"
+        android:choiceMode="singleChoice" />
 </RelativeLayout>

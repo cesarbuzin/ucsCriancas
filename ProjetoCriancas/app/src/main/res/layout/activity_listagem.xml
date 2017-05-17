@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:descendantFocusability="blocksDescendants"
     tools:context=".fragment.ListagemActivity">
 
-    <include layout="@layout/content_listagem"
-        android:id="@+id/list" />
+    <include layout="@layout/content_listagem" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/addCrianca"
@@ -18,13 +18,6 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/stat_notify_more"
         app:backgroundTint="@android:color/holo_green_light" />
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-    </android.support.design.widget.AppBarLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

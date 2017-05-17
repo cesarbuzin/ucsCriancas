@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import criancas.ucs.com.projetocriancas.R;
+import criancas.ucs.com.projetocriancas.listener.OnItemClickListener;
 
 public class ViewCriancasActivity extends android.app.Fragment {
 
