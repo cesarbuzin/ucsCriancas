@@ -12,8 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_toRightOf="@+id/GraficoCriancas"
-        android:layout_toEndOf="@+id/GraficoCriancas"
-        tools:layout="@layout/activity_listagem" />
+        android:layout_toEndOf="@+id/GraficoCriancas" />
 
     <fragment
         android:layout_weight="1"

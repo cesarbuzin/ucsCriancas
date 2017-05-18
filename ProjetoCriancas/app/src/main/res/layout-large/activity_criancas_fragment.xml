@@ -4,35 +4,33 @@
     android:orientation="vertical"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:weightSum="4"
+android:weightSum="2"
+    android:rowCount="2"
+
+    android:layout_weight="1"
 android:padding="5dp"> <!-- to show what the parent is -->
-<LinearLayout
-    android:layout_height="476dp"
-    android:layout_width="match_parent"
-    android:layout_weight="2" >
+
     <fragment
         android:id="@+id/ListagemCriancasActivity"
         android:name="criancas.ucs.com.projetocriancas.fragment.ListagemActivity"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_toRightOf="@+id/GraficoCriancas"
-        android:layout_toEndOf="@+id/GraficoCriancas"
-        android:layout_weight="1.01"
-        tools:layout="@layout/activity_listagem" />
-    </LinearLayout>
-<LinearLayout
-    android:layout_height="490dp"
-    android:layout_width="match_parent">
+        android:layout_width="fill_parent"
+        android:layout_height="377dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        tools:layout_weight="0.5" />
+
     <fragment
         android:id="@+id/EmptyActivity"
         android:name="criancas.ucs.com.projetocriancas.fragment.EmptyActivity"
         android:layout_width="match_parent"
-        android:layout_height="479dp"
+        android:layout_height="412dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        tools:layout="@layout/activity_empty" />
-    <!--tools:layout="@layout/activity_empty"-->
-    </LinearLayout>
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.5"
+         />
+
 </GridLayout>
