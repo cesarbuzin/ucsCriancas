@@ -2,34 +2,27 @@ package criancas.ucs.com.projetocriancas.activities;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
-import android.content.res.Configuration;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CursorAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import criancas.ucs.com.projetocriancas.R;
 import criancas.ucs.com.projetocriancas.db.DBAdapter;
 import criancas.ucs.com.projetocriancas.fragment.EditDadosActivity;
 import criancas.ucs.com.projetocriancas.fragment.EmptyActivity;
 import criancas.ucs.com.projetocriancas.fragment.GraficoActivity;
-import criancas.ucs.com.projetocriancas.fragment.IncludeInfoActivity;
 import criancas.ucs.com.projetocriancas.fragment.ListagemActivity;
-import criancas.ucs.com.projetocriancas.listener.OnItemClickListener;
+
+import criancas.ucs.com.projetocriancas.R;
+
 
 public class CriancasFragmentActivity extends FragmentActivity {
 
@@ -52,6 +45,12 @@ public class CriancasFragmentActivity extends FragmentActivity {
         ListagemActivity fragmentListagem = new ListagemActivity();
         fragTransaction.replace(R.id.ListagemCriancasActivity, fragmentListagem);
 
+        EmptyActivity fragmentDados = new EmptyActivity();
+        if(findViewById(R.id.EmptyActivity) != null)
+            fragTransaction.replace(R.id.EmptyActivity, fragmentDados);
+
+        fragTransaction.addToBackStack(null);
+
         fragTransaction.commit();
 
         criancasListView = (ListView) findViewById(R.id.listagemCriancas);
@@ -61,11 +60,9 @@ public class CriancasFragmentActivity extends FragmentActivity {
         int flags = 0;
         criancasAdapter = new SimpleCursorAdapter(CriancasFragmentActivity.this,R.layout.activity_view_criancas,null,origem,destino,flags);
         criancasListView.setAdapter(criancasAdapter);
-
         criancasListView.setOnItemClickListener(viewCriancasListener);
 
         addCrianca = (FloatingActionButton) findViewById(R.id.addCrianca);
-
         addCrianca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,8 +73,9 @@ public class CriancasFragmentActivity extends FragmentActivity {
                     fragTransaction.replace(R.id.EmptyActivity, fragmentDados);
                 else {
                     fragTransaction.replace(R.id.ListagemCriancasActivity, fragmentDados);
-                    fragTransaction.addToBackStack(null);
                 }
+                fragTransaction.addToBackStack(null);
+
                 fragTransaction.commit();
             }
         });
@@ -98,6 +96,7 @@ public class CriancasFragmentActivity extends FragmentActivity {
             }
         });
         **/
+
 
     }
 

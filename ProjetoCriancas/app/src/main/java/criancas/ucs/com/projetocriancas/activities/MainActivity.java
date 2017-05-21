@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import criancas.ucs.com.projetocriancas.ItemListActivity;
 import criancas.ucs.com.projetocriancas.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("Falha ao aguardar!", e.getMessage());
                 }
                 finish();
-                Intent viewCriancas = new Intent(getApplicationContext(), CriancasFragmentActivity.class);
+                Intent viewCriancas = new Intent(getApplicationContext(), ItemListActivity.class);
                 startActivity(viewCriancas);
             }
         }, 3000);
